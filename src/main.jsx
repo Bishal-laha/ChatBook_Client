@@ -7,14 +7,14 @@ import { Provider } from "react-redux";
 import store from './store/store.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
+  <React.StrictMode>
   <Provider store={store}>
     <HelmetProvider>
       <CssBaseline />
-      {/* <div onContextMenu={(e) => e.preventDefault()}> */}
+      <div onContextMenu={(e) => e.preventDefault()}>
       <App />
-      {/* </div> */}
+      </div>
     </HelmetProvider>
   </Provider>
-  // </React.StrictMode>,
+  </React.StrictMode>
 )
